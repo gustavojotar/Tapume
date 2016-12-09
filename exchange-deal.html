@@ -1,0 +1,30 @@
+
+<ion-header-bar class="bar-positive">
+  <h2 class="title">More Info</h2>
+</ion-header-bar>
+
+<ion-view>
+  <ion-content>
+
+<label class="item item-input">
+  <span class="input-label">Product Description</span>
+  <input type="text" ng-model="data.description">
+</label>
+
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-camera"></i>
+     Upload Product Picture
+    </a>
+  </div>
+
+   <div class="item tabs tabs-secondary tabs-icon-left" ng-click="exchange()">
+    <a class="tab-item" href="#">
+      <i class="icon ion-hammer"></i>
+      Send Deal
+    </a>
+  </div>
+
+  </ion-content>
+</ion-view>

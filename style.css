@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.logo{
+  background-color: #ee2b7b;
+}
+
+#collor{
+  color: white;
+  background-color: gray;
+}
+
+.click-1{
+  top: 10px;
+  position: relative;
+  left: 70px;
+  margin-bottom: 10px;
+}
+
+.click-2{
+  top: 10px;
+  position: relative;
+  left: 40px;
+  margin-bottom: 10px;
+}

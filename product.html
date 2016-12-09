@@ -1,0 +1,41 @@
+<ion-header-bar class="bar-positive">
+  <h2 class="title">More Info</h2>
+</ion-header-bar>
+
+<ion-view>
+  <ion-content>
+    <ion-list class="list card">
+      <ion-item class="item-text-wrap"
+        ng-repeat="item in products | filter: { shortname: whichproduct }">
+        <div class="item item-avatar">
+          <img src="img/{{item.reknown}}.jpg">
+          <h2>{{ item.reknown }}</h2>
+          <p>{{ item.bio }}</p>
+          <p>{{ item.distance }}</p>
+        </div>
+
+
+        <div class="item item-body">
+          <img class="full-image" ng-src="img/{{item.shortname}}.jpg"
+            alt="{{ item.name }} Photo">
+          <p>{{ item.description }}</p>
+        </div>
+      </ion-item>
+    </ion-list>
+
+     <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#/tab/dash/{{item.shortname}}/exchange-deal">
+      <i class="icon ion-hammer"></i>
+      Make an Exchange Deal
+    </a>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#/tab/dash/{{item.shortname}}/purpose">
+      <i class="icon ion-hammer"></i>
+      Make a Purpose
+    </a>
+  </div>
+
+  </ion-content>
+</ion-view>

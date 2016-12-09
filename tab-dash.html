@@ -1,0 +1,39 @@
+<ion-view view-title="Dashboard">
+
+  <ion-content>
+  <ion-refresher on-refresh="doRefresh()">
+  </ion-refresher>
+  <ion-list>
+    <ion-item ng-class="{'star': item.star}"
+    ng-repeat='product in products'
+    class="item-thumbnail-left item-icon-right
+      item-text-wrap" href="#/tab/dash/{{product.id}}">
+      <img ng-src="img/rsz_{{product.shortname}}.jpg"
+        alt="{{ product.name }} Photo">
+      <h2>{{product.name}}</h2>
+      <h3>{{product.reknown}}</h3>
+      <p>{{product.bio | limitTo: 100}}
+      {{ product.bio.length > 150 ? '&hellip;' : '' }}</p>
+      <button class="button button-clear icon ion-star button-assertive"
+        ng-click="toggleStar(item)"
+        ng-show="item.star"></button>
+      <ion-option-button class="button-dark"
+        ng-click="toggleStar(item)">
+        <i class="icon ion-star"></i>
+      </ion-option-button>
+    </ion-item>
+  </ion-list>
+
+  <div class="click-1">
+      <button class="button button-stable">
+        Post a Product Offer
+      </button>
+    </div>
+
+    <div class="click-2">
+      <p> <button class="button button-assertive">
+        You have one exchange offer
+      </button> </p>
+    </div>
+</ion-content>
+</ion-view>

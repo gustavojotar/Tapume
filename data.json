@@ -1,0 +1,35 @@
+
+{
+  "products": [
+    {
+      "bio": "8 in. x 8 in. x 16 in. Gray Concrete Block",
+      "shortname": "concrete",
+      "name": "Concrete Block",
+      "reknown": "Lisa Dound",
+      "description": "Half of a Rust-Oleum 2774 Zinsser Interior EggShell, Perma White: for use on bathrooms, laundry rooms, dorm rooms. Available for deals of sell or exchange",
+      "distance" : "15 miles",
+      "latitude" : "43.083524",
+      "longitude": "-77.633703"
+    }, {
+      "bio": "White Semi Gloss Interior Paint",
+      "shortname": "white-wallPaint",
+      "name": "White Wall Paint",
+      "reknown": "Lisa Dound",
+      "description": "Half of a Rust-Oleum 2774 Zinsser Interior EggShell, Perma White: for use on bathrooms, laundry rooms, dorm rooms. Available for deals of sell or exchange",
+      "distance" : "15 miles",
+      "latitude" : "43.086000",
+      "longitude": "-77.674537"
+
+    },{
+      "bio": "Premiere 8 in. x 8 in. x 4 in. Decora Glass Blocks",
+      "shortname": "glassblock",
+      "name": "Glass Block",
+      "reknown": "Bob Kent",
+      "description": "Half of a Rust-Oleum 2774 Zinsser Interior EggShell, Perma White: for use on bathrooms, laundry rooms, dorm rooms. Available for deals of sell or exchange",
+      "distance" : "15 miles",
+      "latitude" : "43.092684",
+      "longitude": "-77.656014"
+
+    }
+  ]
+}
